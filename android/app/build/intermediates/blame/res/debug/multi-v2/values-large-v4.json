@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mickey/Desktop/EvalApp/EvalApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/Users/mickey/Documents/GitHub/EvaluationApplication/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "/Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/res/values-large-v4/values-large-v4.xml",

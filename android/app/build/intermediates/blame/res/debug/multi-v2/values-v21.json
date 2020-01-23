@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mickey/Desktop/EvalApp/EvalApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/mickey/Documents/GitHub/EvaluationApplication/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/res/values-v21/values-v21.xml",

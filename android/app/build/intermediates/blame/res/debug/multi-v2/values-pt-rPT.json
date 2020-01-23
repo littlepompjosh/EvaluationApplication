@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mickey/Desktop/EvalApp/EvalApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/mickey/Documents/GitHub/EvaluationApplication/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/res/values-pt-rPT/values-pt-rPT.xml",
