@@ -2,6 +2,8 @@ import React from 'react';
 import { Ionicons } from 'react-native-ionicons';
 import { StyleSheet, View, Text, Image, I18nManager } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { Rating, AirbnbRating } from 'react-native-ratings';
+import TEST_IMG from '../assets/test.png'
 
 I18nManager.forceRTL(false);
 
@@ -29,31 +31,40 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     textAlign: 'center',
     marginBottom: 16,
+    alignItems : 'flex-start'
   },
 });
 
 const slides = [
   {
     key: '1',
-    title: 'How satisfied are you in exposition in 2020 in terms of accomodation?',
-    text: 'React-native-app-intro-slider is easy to setup with a small footprint and no dependencies. And it comes with good default layouts!',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of accomodation?',
     icon: 'ios-images',
-    colors: ['#63E2FF', '#B066FE'],
+    colors: '#63E2FF',
   },
   {
     key: '2',
-    title: 'Super customizable',
-    text:
-      'The component is also super customizable, so you can adapt it to cover your needs and wants.',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the venue?',
     icon: 'ios-options',
-    colors: ['#A3A1FF', '#3A3897'],
+    colors: '#A3A1FF',
   },
   {
     key: '3',
-    title: 'No need to buy me beer',
-    text: 'Usage is all free',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the date and time?',
     icon: 'ios-beer',
-    colors: ['#29ABE2', '#4F00BC'],
+    colors: '#29ABE2',
+  },
+  {
+    key: '4',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the speakers?',
+    icon: 'ios-beer',
+    colors: '#57a0be',
+  },
+  {
+    key: '5',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#ffb400',
   },
 ];
 
@@ -67,15 +78,25 @@ export default class App extends React.Component {
           paddingTop: item.topSpacer,
           paddingBottom: item.bottomSpacer,
           width: dimensions.width,
-          backgroundColor : item.colors[0]
+          backgroundColor : item.colors
         },
       ]}    
     >
       
-      <View>
+      <View style={{width : dimensions.width, flex : 1}}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.text}>{item.text}</Text>
+        {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
+      <Rating
+          type='star'
+          showRating
+          style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width, marginBottom: 200}}
+          ratingBackgroundColor='#fafafa'
+          ratingColor = "orange"
+          ratingCount = {5}
+          startingValue = {0}
+          fractions = {1}
+        />
     </View>
   );
 
@@ -84,7 +105,7 @@ export default class App extends React.Component {
       <AppIntroSlider
         slides={slides}
         renderItem={this._renderItem}
-        onDone={() => this.props.navigation.navigate('Home', {name : 'Regie'})}
+        onDone={() => this.props.navigation.navigate('Home')}
         // bottomButton
         // showPrevButton
         // showSkipButton

@@ -9,18 +9,11 @@ class HomeScreen extends React.Component {
   render() {
     const {navigate} = this.props.navigation;
 
-    var USER = null;
-    if(this.props.navigation.state.params !== undefined){
-      USER = this.props.navigation.state.params.name;
-    }else{
-      USER = "NO USER";
-    }
-
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-  <Text>{USER}</Text>
+        <Text style={{fontSize: 25, fontWeight: 'bold', marginBottom: 50}}> STI College Marikina Exposition 2020 </Text> 
         <Image source={require('./assets/start-logo.png')} style={{height : 150, width: 150, marginBottom: 100}}/>
-        <Button color="#e74c3c" title="Start Survey" onPress={() => navigate('Question', {name : 'Rex'})}/>
+        <Button color="#e74c3c" title="Start Survey" onPress={() => navigate('Question')}/>
       </View>
     );
   }
