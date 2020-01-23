@@ -1,11 +1,87 @@
 import React from 'react';
 import { Ionicons } from 'react-native-ionicons';
 import { StyleSheet, View, Text, Image, I18nManager } from 'react-native';
-import AppIntroSlider from 'react-native-app-intro-slider';
+import {AppIntroSlider, GoToSlide} from 'react-native-app-intro-slider';
+
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import TEST_IMG from '../assets/test.png'
 
 I18nManager.forceRTL(false);
+
+
+export default class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+        activePage : 0,
+        nullPage : 0
+     }
+}
+  
+  _renderItem = ({ item, dimensions }) => (
+    <View
+      style={[
+        styles.mainContent,
+        {
+          flex: 1,
+          paddingTop: item.topSpacer,
+          paddingBottom: item.bottomSpacer,
+          width: dimensions.width,
+          backgroundColor : item.colors
+        },
+      ]}    
+    >
+      
+      <View style={{width : dimensions.width, flex : 1}}>
+        <Text style={styles.title}>{item.title}</Text>
+        {/* <Text style={styles.text}>{item.text}</Text> */}
+      </View>
+      <Rating
+          type='star'
+          showRating
+          style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width, marginBottom: 200}}
+          ratingBackgroundColor='#fafafa'
+          ratingColor = "orange"
+          ratingCount = {5}
+          startingValue = {0}
+          fractions = {1}
+          onFinishRating = {(e) => this.updateRecord(e)}
+        />
+    </View>
+  );
+  
+  updateRecord = (e) =>{
+    answers[this.state.activePage] = e;
+    console.log(answers)
+    if(answers.includes(undefined)){
+      console.log('ERROR SKIPPED ITEM FOUND')
+      GoToSlide(6);
+    }else{
+      
+    }
+  }
+
+
+  render() {
+    return (
+      <AppIntroSlider
+        slides={slides}
+        renderItem={this._renderItem}
+        onDone={() => this.props.navigation.navigate('Home')}
+        onSlideChange ={(e) => this.setState({activePage : e})}
+        // gotoslide = {this.state.nullPage}
+        
+        // bottomButton
+        // showPrevButton
+        // showSkipButton
+        // hideNextButton
+        // hideDoneButton
+        // onSkip={() => console.log("skipped")}
+      />
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   mainContent: {
@@ -34,6 +110,7 @@ const styles = StyleSheet.create({
     alignItems : 'flex-start'
   },
 });
+
 
 const slides = [
   {
@@ -66,53 +143,38 @@ const slides = [
     icon: 'ios-beer',
     colors: '#ffb400',
   },
+  {
+    key: '6',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#405738',
+  },
+  {
+    key: '7',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#cf8000',
+  },
+  {
+    key: '8',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#2b1345',
+  },
+  {
+    key: '9',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#65dbba',
+  },
+  {
+    key: '10',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    icon: 'ios-beer',
+    colors: '#943a17',
+  },
 ];
 
-export default class App extends React.Component {
-  _renderItem = ({ item, dimensions }) => (
-    <View
-      style={[
-        styles.mainContent,
-        {
-          flex: 1,
-          paddingTop: item.topSpacer,
-          paddingBottom: item.bottomSpacer,
-          width: dimensions.width,
-          backgroundColor : item.colors
-        },
-      ]}    
-    >
-      
-      <View style={{width : dimensions.width, flex : 1}}>
-        <Text style={styles.title}>{item.title}</Text>
-        {/* <Text style={styles.text}>{item.text}</Text> */}
-      </View>
-      <Rating
-          type='star'
-          showRating
-          style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width, marginBottom: 200}}
-          ratingBackgroundColor='#fafafa'
-          ratingColor = "orange"
-          ratingCount = {5}
-          startingValue = {0}
-          fractions = {1}
-        />
-    </View>
-  );
+const answers = [
 
-  render() {
-    return (
-      <AppIntroSlider
-        slides={slides}
-        renderItem={this._renderItem}
-        onDone={() => this.props.navigation.navigate('Home')}
-        // bottomButton
-        // showPrevButton
-        // showSkipButton
-        // hideNextButton
-        // hideDoneButton
-        // onSkip={() => console.log("skipped")}
-      />
-    );
-  }
-}
+]
