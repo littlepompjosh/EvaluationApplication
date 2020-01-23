@@ -1,7 +1,7 @@
 import React from 'react';
 import { Ionicons } from 'react-native-ionicons';
-import { StyleSheet, View, Text, Image, I18nManager } from 'react-native';
-import {AppIntroSlider, GoToSlide} from 'react-native-app-intro-slider';
+import { StyleSheet, View, Text, Image, I18nManager, Button } from 'react-native';
+import AppIntroSlider from 'react-native-app-intro-slider';
 
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import TEST_IMG from '../assets/test.png'
@@ -17,7 +17,17 @@ export default class App extends React.Component {
         activePage : 0,
         nullPage : 0
      }
-}
+  }
+
+  componentDidMount = () => {
+
+    slides.forEach(item => {
+      answers.push(0);
+    })
+
+    console.log(answers)
+
+  }
   
   _renderItem = ({ item, dimensions }) => (
     <View
@@ -53,32 +63,40 @@ export default class App extends React.Component {
   
   updateRecord = (e) =>{
     answers[this.state.activePage] = e;
-    console.log(answers)
-    if(answers.includes(undefined)){
-      console.log('ERROR SKIPPED ITEM FOUND')
-      GoToSlide(6);
-    }else{
-      
+  }
+
+  checkAnswer = (page) => {
+   
+    if(answers[this.state.activePage] === 0){
+      this.refSlider.goToSlide(page - 1)
+      this.setState({activePage : page - 1})
+        console.log(answers , '  -- ' + page);
+        console.log(this.state.activePage)
     }
   }
 
 
   render() {
     return (
+      <>
+      {/* <Button title="TEST" onPress={() => this.refSlider.goToSlide(2)} /> */}
       <AppIntroSlider
         slides={slides}
+        ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
-        onDone={() => this.props.navigation.navigate('Home')}
-        onSlideChange ={(e) => this.setState({activePage : e})}
-        // gotoslide = {this.state.nullPage}
+        onDone={() => this.props.navigation.navigate('Thanks')}
+        onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}
+        showNextButton = {false}
         
         // bottomButton
+
         // showPrevButton
         // showSkipButton
-        // hideNextButton
+        hideNextButton={true}
         // hideDoneButton
         // onSkip={() => console.log("skipped")}
       />
+      </>
     );
   }
 }

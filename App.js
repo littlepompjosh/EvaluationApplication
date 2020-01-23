@@ -3,6 +3,7 @@ import { View, Text, Button, Image,StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import QuestionScreen from './components/slider'
+import ThanksScreen from './activity/thanks'
 import Logo from './assets/rating.png'
 
 class HomeScreen extends React.Component {
@@ -24,8 +25,7 @@ const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
-      headerShown : false,
-      gesturesEnabled: false
+      headerShown : false
     }
   },
   Question : {
@@ -34,7 +34,14 @@ const AppNavigator = createStackNavigator({
       headerShown : false,
       // drawerLockMode : 'locked-open'
     }
+  },
+  Thanks : {
+    screen : ThanksScreen,
+    navigationOptions : {
+      headerShown : false
+    }
   }
+
 });
 
 export default createAppContainer(AppNavigator);
