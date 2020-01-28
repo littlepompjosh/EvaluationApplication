@@ -55,7 +55,7 @@ export default class App extends React.Component {
           ratingColor = "orange"
           ratingCount = {5}
           startingValue = {0}
-          fractions = {1}
+          //fractions = {1}
           onFinishRating = {(e) => this.updateRecord(e)}
         />
     </View>
@@ -135,61 +135,61 @@ const slides = [
     key: '1',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of accomodation?',
     icon: 'ios-images',
-    colors: '#63E2FF',
+    colors: '#1abc9c',
   },
   {
     key: '2',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the venue?',
     icon: 'ios-options',
-    colors: '#A3A1FF',
+    colors: '#16a085',
   },
   {
     key: '3',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the date and time?',
     icon: 'ios-beer',
-    colors: '#29ABE2',
+    colors: '#2ecc71',
   },
   {
     key: '4',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the speakers?',
     icon: 'ios-beer',
-    colors: '#57a0be',
+    colors: '#27ae60',
   },
   {
     key: '5',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
     icon: 'ios-beer',
-    colors: '#ffb400',
+    colors: '#3498db',
   },
   {
     key: '6',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
     icon: 'ios-beer',
-    colors: '#405738',
+    colors: '#2980b9',
   },
   {
     key: '7',
     title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
     icon: 'ios-beer',
-    colors: '#cf8000',
+    colors: '#9b59b6',
   },
   {
     key: '8',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the Students Products?',
     icon: 'ios-beer',
-    colors: '#2b1345',
+    colors: '#8e44ad',
   },
   {
     key: '9',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the Students Booth Presentation?',
     icon: 'ios-beer',
-    colors: '#65dbba',
+    colors: '#34495e',
   },
   {
     key: '10',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
+    title: 'How satisfied are you with the overall event?',
     icon: 'ios-beer',
-    colors: '#943a17',
+    colors: '#2c3e50',
   },
 ];
 
