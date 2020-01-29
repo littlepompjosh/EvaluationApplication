@@ -1,0 +1,4 @@
+#Wed Jan 29 08:03:32 PST 2020
+base.0=/Users/mickey/Documents/GitHub/EvaluationApplication/android/app/build/intermediates/transforms/r8/release/0
+path.0=classes.dex
+renamed.0=classes.dex

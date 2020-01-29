@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:8:7-39
+	android:roundIcon
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:10:7-52
+	android:icon
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.evalapp.MainActivity
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
