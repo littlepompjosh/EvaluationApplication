@@ -10,11 +10,11 @@ import Logo from './assets/rating.png'
 import { AsyncStorage } from "react-native";
 var Parse = require('parse/react-native');
 Parse.setAsyncStorage(AsyncStorage);
-Parse.initialize('EvalAPP', 'EvalMasterKey');
-Parse.serverURL = 'http://192.168.100.12:1337/parse';
+Parse.initialize('evaluationAppId', '6fe6465f7f');
+Parse.serverURL = 'http://192.168.100.100:1337/parse';
 
 // Functions
-import {checkServer} from './function'
+import {getData, addNewData} from './function'
 
 
 class HomeScreen extends React.Component {
@@ -22,8 +22,27 @@ class HomeScreen extends React.Component {
     super(props);
     this.state={
       visible:"none",
-      isLoading:true
+      isLoading:false,
+      data : null
     }
+  }
+
+  componentDidMount = () =>{
+
+    this.setState({
+      isLoading : true, visible: 'flex'
+    })
+
+    getData().then(result => {
+      console.log(result)
+      if(result !== undefined){
+        this.setState({data : result});
+        
+        this.setState({
+          isLoading : false, visible: 'none'
+        })
+      }
+    })
   }
 
   toast =()=>{
@@ -38,34 +57,45 @@ class HomeScreen extends React.Component {
     const {navigate} = this.props.navigation;
 
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor: '#686de0' }}>
-        <Text style={styles.design}> STI College Marikina  </Text>
-        <Text style={styles.designs}> Exposition 2020 </Text> 
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:"#fff" }}>
+        <View style={{flex:5, alignItems: 'center', justifyContent: 'center',}}>
+          <Text style={styles.design}> 
+            <Text style={{color:"#0054db", fontWeight:"bold"}}>
+              STI 
+            </Text> College Marikina  
+          </Text>
+          <Text style={styles.designs}> Exposition 2020 </Text> 
         <Image source={require('./assets/rating.png')} style={{height : 150, width: 150, marginBottom: 100}}/>
         {/* <View >
         <Button  title = 'Start Survey' style={styles.butones} onPress={() => navigate('Question')}/>
         </View> */}
+        </View>
+        <View style={{flex:1}}>
         <TouchableOpacity
           disabled={this.state.isLoading === true ? true:false}
-          onPress={() => navigate('Question')}
+          // onPress={() => navigate('Question')}
+          onPress={()=>this.setState({visible:"flex",isLoading:true })}
           style={{
             height:50,
-            width:300,
+            width:350,
             borderRadius:50,
-            backgroundColor:"#dcdcdc",
+            backgroundColor:"#3498db",
             display:"flex",
             alignItems:"center",
             justifyContent:"center"
           }}
         >
-          <Text style={{fontWeight:"bold", fontSize:15}}>
+          <Text style={{fontWeight:"bold", color:"#fff",fontSize:15}}>
             Start Survey
           </Text>
         </TouchableOpacity>
-        
-        <View style={{marginTop: 100}}>
-          <Button onPress={() => this.toast()} title="TEST SERVER CONNECTION" />
         </View>
+
+        <View>
+          <Button title="TEST SERVER CONNECTION"/>
+        </View>
+        
+       
         <View style={[{display:this.state.visible},styles.toastContainer]}>
           <View style={[{display:this.state.visible},styles.toast]}>
             <Text style={styles.toastText}>Loading....</Text>
