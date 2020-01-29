@@ -6,7 +6,21 @@ import QuestionScreen from './components/slider'
 import ThanksScreen from './activity/thanks'
 import Logo from './assets/rating.png'
 
+// PARSE SERVER CONFIGURATION
+import { AsyncStorage } from "react-native";
+var Parse = require('parse/react-native');
+Parse.setAsyncStorage(AsyncStorage);
+Parse.initialize('EvalAPP', 'EvalMasterKey');
+Parse.serverURL = 'http://192.168.100.12:1337/parse';
+
+// Functions
+import {checkServer} from './function'
+
+
 class HomeScreen extends React.Component {
+
+
+
   render() {
     const {navigate} = this.props.navigation;
 
@@ -34,6 +48,12 @@ class HomeScreen extends React.Component {
             Start Survey
           </Text>
         </TouchableOpacity>
+        
+        <View style={{marginTop: 100}}>
+          <Button onPress={() => {checkServer()}} title="TEST SERVER CONNECTION" />
+        </View>
+       
+
       </View>
     );
   }
