@@ -18,6 +18,19 @@ import {checkServer} from './function'
 
 
 class HomeScreen extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      visible:"none",
+      isLoading:true
+    }
+  }
+
+  toast =()=>{
+    if(this.state.visible === "none"){
+      this.setState({visible:"flex"})
+    }
+  }
 
 
 
@@ -33,6 +46,7 @@ class HomeScreen extends React.Component {
         <Button  title = 'Start Survey' style={styles.butones} onPress={() => navigate('Question')}/>
         </View> */}
         <TouchableOpacity
+          disabled={this.state.isLoading === true ? true:false}
           onPress={() => navigate('Question')}
           style={{
             height:50,
@@ -50,7 +64,12 @@ class HomeScreen extends React.Component {
         </TouchableOpacity>
         
         <View style={{marginTop: 100}}>
-          <Button onPress={() => {checkServer()}} title="TEST SERVER CONNECTION" />
+          <Button onPress={() => this.toast()} title="TEST SERVER CONNECTION" />
+        </View>
+        <View style={[{display:this.state.visible},styles.toastContainer]}>
+          <View style={[{display:this.state.visible},styles.toast]}>
+            <Text style={styles.toastText}>Loading....</Text>
+          </View>
         </View>
        
 
@@ -84,6 +103,29 @@ const AppNavigator = createStackNavigator({
 
 export default createAppContainer(AppNavigator);
 const styles = StyleSheet.create({
+  toastContainer:{
+    position:"absolute",
+    justifyContent:"center",
+    alignItems:"center",
+    top:0,
+    bottom:0,
+    left:0,
+    right:0,
+  },
+  toast:{
+    height:150,
+    width:150,
+    backgroundColor:"rgba(0,0,0,0.5)",
+    justifyContent:"center",
+    alignItems:"center",
+   
+    borderRadius:12
+  },
+  toastText:{
+    fontSize:18,
+    fontWeight:"800",
+    color:"#fff",
+  },
   design: {
     fontSize: 30,
     fontWeight: 'bold',
