@@ -19,24 +19,20 @@ export async function getData(){
     });
 }
 
-export function addNewData() {
+export async function addNewData(arr) {
 
-  var Source = Parse.Object.extend("questionnaire");
+  var Source = Parse.Object.extend("answers");
     var query = new Source();
-    query.set("question", "kumain na ako hehehe");
+    query.set("answer_data", arr);
 
-    query.save().then((result) => {
+    return query.save().then(result => {
       // The object was retrieved successfully.
 
-      return (
-            ToastAndroid.showWithGravity(
-                JSON.stringify(result),
-                ToastAndroid.SHORT,
-                ToastAndroid.CENTER,
-            )
-        )
+      return ({status : true, result : result})
+        
     }, (error) => {
       console.log(error)
+      return {status : false, error: error}
       // The object was not retrieved successfully.
       // error is a Parse.Error with an error code and message.
     });

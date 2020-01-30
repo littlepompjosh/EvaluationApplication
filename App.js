@@ -16,6 +16,7 @@ Parse.serverURL = 'http://192.168.100.100:1337/parse';
 // Functions
 import {getData, addNewData} from './function'
 
+var questionnaires = null;
 
 class HomeScreen extends React.Component {
   constructor(props){
@@ -33,10 +34,11 @@ class HomeScreen extends React.Component {
       isLoading : true, visible: 'flex'
     })
 
-    getData().then(result => {
-      console.log(result)
-      if(result !== undefined){
-        this.setState({data : result});
+    getData().then(questions => {
+      console.log(questions)
+      if(questions !== undefined){
+        questionnaires = questions
+        
         
         this.setState({
           isLoading : false, visible: 'none'
@@ -74,10 +76,10 @@ class HomeScreen extends React.Component {
         <TouchableOpacity
           disabled={this.state.isLoading === true ? true:false}
           // onPress={() => navigate('Question')}
-          onPress={()=>this.setState({visible:"flex",isLoading:true })}
+          onPress={()=> navigate('Question', {qData : questionnaires})}
           style={{
             height:50,
-            width:350,
+            width:300,
             borderRadius:50,
             backgroundColor:"#3498db",
             display:"flex",
@@ -91,9 +93,9 @@ class HomeScreen extends React.Component {
         </TouchableOpacity>
         </View>
 
-        <View>
+        {/* <View>
           <Button title="TEST SERVER CONNECTION"/>
-        </View>
+        </View> */}
         
        
         <View style={[{display:this.state.visible},styles.toastContainer]}>
@@ -117,6 +119,7 @@ const AppNavigator = createStackNavigator({
   },
   Question : {
     screen : QuestionScreen,
+    // params : {question : questionnaires},
     navigationOptions: {
       headerShown : false,
       // drawerLockMode : 'locked-open'

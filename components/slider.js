@@ -4,18 +4,22 @@ import { StyleSheet, View, Text, Image, I18nManager, Button } from 'react-native
 import AppIntroSlider from 'react-native-app-intro-slider';
 
 import { Rating, AirbnbRating } from 'react-native-ratings';
-import TEST_IMG from '../assets/test.png'
+import {addNewData} from '../function'
 
 I18nManager.forceRTL(false);
+
+
+var final_answer = [];
 
 
 export default class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
         activePage : 0,
-        nullPage : 0
+        nullPage : 0,
+        data : []
      }
   }
 
@@ -25,48 +29,54 @@ export default class App extends React.Component {
       answers.push(0);
     })
 
-    console.log(answers)
+    this.setState({data : this.props.navigation.state.params.qData})
+    console.log(this.props.navigation.state.params.qData)
 
   }
-  
+
   _renderItem = ({ item, dimensions }) => (
     <View
-      style={[
-        styles.mainContent,
-        {
+      style={[{
+
           flex: 1,
-          paddingTop: item.topSpacer,
-          paddingBottom: item.bottomSpacer,
           width: dimensions.width,
-          backgroundColor : item.colors
-        },
-      ]}    
+          backgroundColor : item.get('colors')
+
+      },styles.mainContent]}
     >
-      
-      <View style={{width : dimensions.width, flex : 1}}>
-        <Text style={styles.title}>{item.title}</Text>
+
+      <View style={{width : dimensions.width, flex : 3,justifyContent:"center",}}>
+          <Text style={styles.title}>{item.get('question')}</Text>
         {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
-      <Rating
-          type='star'
-          showRating
-          style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width, marginBottom: 200}}
-          ratingBackgroundColor='#fafafa'
-          ratingColor = "orange"
-          ratingCount = {5}
-          startingValue = {0}
-          //fractions = {1}
-          onFinishRating = {(e) => this.updateRecord(e)}
-        />
+      {/* <Button title="TEST" onPress={() => console.log(item.id)} /> */}
+      <View style={{flex:1}}>
+        <Rating
+            type='star'
+            showRating
+            style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width}}
+            ratingBackgroundColor='#fafafa'
+            ratingColor = "orange"
+            ratingCount = {5}
+            startingValue = {0}
+            //fractions = {1}
+            onFinishRating = {(e) => this.updateRecord(e, item.id, item.get('question'))}
+          />
+        </View>
     </View>
   );
-  
-  updateRecord = (e) =>{
+
+  updateRecord = (e, id, q) =>{
     answers[this.state.activePage] = e;
+    final_answer.push({
+      id : id,
+      question : q,
+      answer : e
+    })
   }
 
   checkAnswer = (page) => {
-   
+
     if(answers[this.state.activePage] === 0){
       this.refSlider.goToSlide(page - 1)
       this.setState({activePage : page - 1})
@@ -75,19 +85,39 @@ export default class App extends React.Component {
     }
   }
 
+  addToDatabase = () => {
+    // console.log(final_answer)
+    addNewData(final_answer).then( res => {
+
+      final_answer = [];
+      answers = [];
+      // console.log(res)
+      if(res.status === true){
+        
+        this.props.navigation.navigate('Thanks')
+      }else{
+
+        ToastAndroid.showWithGravity(
+          res.error,
+          ToastAndroid.SHORT,
+          ToastAndroid.CENTER,
+        )
+      }
+    })
+  }
 
   render() {
     return (
       <>
       {/* <Button title="TEST" onPress={() => this.refSlider.goToSlide(2)} /> */}
       <AppIntroSlider
-        slides={slides}
+        slides={this.state.data}
         ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
-        onDone={() => this.props.navigation.navigate('Thanks')}
+        onDone={() => this.addToDatabase()}
         onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}
         showNextButton = {false}
-        
+
         // bottomButton
 
         // showPrevButton
@@ -133,66 +163,12 @@ const styles = StyleSheet.create({
 const slides = [
   {
     key: '1',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of accomodation?',
+    question: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of accomodation?',
     icon: 'ios-images',
     colors: '#1abc9c',
-  },
-  {
-    key: '2',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the venue?',
-    icon: 'ios-options',
-    colors: '#16a085',
-  },
-  {
-    key: '3',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the date and time?',
-    icon: 'ios-beer',
-    colors: '#2ecc71',
-  },
-  {
-    key: '4',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the speakers?',
-    icon: 'ios-beer',
-    colors: '#27ae60',
-  },
-  {
-    key: '5',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
-    icon: 'ios-beer',
-    colors: '#3498db',
-  },
-  {
-    key: '6',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
-    icon: 'ios-beer',
-    colors: '#2980b9',
-  },
-  {
-    key: '7',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the ......',
-    icon: 'ios-beer',
-    colors: '#9b59b6',
-  },
-  {
-    key: '8',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the Students Products?',
-    icon: 'ios-beer',
-    colors: '#8e44ad',
-  },
-  {
-    key: '9',
-    title: 'How satisfied are you in the STI College Marikina Exposition 2020 in terms of the Students Booth Presentation?',
-    icon: 'ios-beer',
-    colors: '#34495e',
-  },
-  {
-    key: '10',
-    title: 'How satisfied are you with the overall event?',
-    icon: 'ios-beer',
-    colors: '#2c3e50',
-  },
+  }
 ];
 
-const answers = [
+var answers = [
 
 ]
