@@ -2,7 +2,6 @@ import React from 'react';
 import { Ionicons } from 'react-native-ionicons';
 import { StyleSheet, View, Text, Image, I18nManager, Button } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
-
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import {addNewData} from '../function'
 
@@ -45,12 +44,12 @@ export default class App extends React.Component {
       },styles.mainContent]}
     >
 
-      <View style={{width : dimensions.width, flex : 3,justifyContent:"center",}}>
+      <View style={{width : dimensions.width,flex : 4,backgroundColor:"#dcdcdc",justifyContent:"flex-start", }}>
           <Text style={styles.title}>{item.get('question')}</Text>
         {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
       {/* <Button title="TEST" onPress={() => console.log(item.id)} /> */}
-      <View style={{flex:1}}>
+      <View style={{flex:1, backgroundColor:"#fff"}}>
         <Rating
             type='star'
             showRating
@@ -135,7 +134,6 @@ const styles = StyleSheet.create({
   mainContent: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'flex-start',
   },
   image: {
     width: 320,
@@ -145,17 +143,13 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 255, 255, 0.8)',
     backgroundColor: 'transparent',
     textAlign: 'center',
-    paddingHorizontal: 16,
   },
   title: {
-    marginTop : 150,
-    margin : 30,
     fontSize: 25,
     color: 'white',
     backgroundColor: 'transparent',
     textAlign: 'center',
-    marginBottom: 16,
-    alignItems : 'flex-start'
+    marginTop:100
   },
 });
 
