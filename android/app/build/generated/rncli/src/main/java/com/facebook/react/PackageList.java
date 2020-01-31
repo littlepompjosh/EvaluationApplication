@@ -18,6 +18,8 @@ import com.evalapp.R;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-ping
+import com.reactlibrary.RNReactNativePingPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 
@@ -67,6 +69,7 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new RNCMaskedViewPackage(),
       new RNGestureHandlerPackage(),
+      new RNReactNativePingPackage(),
       new SafeAreaContextPackage()
     ));
   }

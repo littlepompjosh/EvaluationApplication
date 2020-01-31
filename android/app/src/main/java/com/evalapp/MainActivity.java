@@ -1,6 +1,7 @@
 package com.evalapp;
 
 import com.facebook.react.ReactActivity;
+import com.reactlibrary.RNReactNativePingPackage;
 
 public class MainActivity extends ReactActivity {
 

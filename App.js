@@ -5,12 +5,15 @@ import { Animated,
   Image,
   StyleSheet, 
   TouchableOpacity ,
-  Dimensions
+  Dimensions,
+  ToastAndroid
 } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import QuestionScreen from './components/slider'
 import ThanksScreen from './activity/thanks'
+
+import Ping from 'react-native-ping';
 
 // PARSE SERVER CONFIGURATION
 import { AsyncStorage } from "react-native";
@@ -30,28 +33,49 @@ class HomeScreen extends React.Component {
     this.state={
       visible:"none",
       isLoading:false,
-      data : null
+      data : null,
+      toast_label : 'Loading...'
     }
   }
 
-  componentDidMount = () =>{
+  componentDidMount = async() =>{
 
     this.setState({
       isLoading : true, visible: 'flex'
     })
-    
 
-    getData().then(questions => {
-      // console.log(questions)
-      if(questions !== undefined){
-        questionnaires = questions
+      try {
         
-        
-        this.setState({
-          isLoading : false, visible: 'none'
+        const ms = await Ping.start('216.58.196.46',{ timeout: 1000 });
+        console.log(ms);
+
+        getData().then(questions => {
+          // console.log(questions)
+          if(questions !== undefined){
+            questionnaires = questions
+            
+            
+            this.setState({
+              isLoading : false, visible: 'none'
+            })
+          }
         })
+
+      } catch (error) {
+
+        this.setState({toast_label : "NO INTERNET CONNECTION"})
+        ToastAndroid.showWithGravity(
+          'NO INTERNET CONNECTION PALOAD KA!!',
+          ToastAndroid.SHORT,
+          ToastAndroid.BOTTOM,
+        )
+        console.log('special code',error.code, error.message);
       }
-    })
+
+      
+      
+
+      
   }
 
   toast =()=>{
@@ -109,7 +133,7 @@ var width = Dimensions.get('window').width;
        
         <View style={[{display:this.state.visible},styles.toastContainer]}>
           <View style={[{display:this.state.visible},styles.toast]}>
-            <Text style={styles.toastText}>Loading....</Text>
+            <Text style={styles.toastText}>{this.state.toast_label}</Text>
           </View>
         </View>
        
@@ -156,7 +180,7 @@ const styles = StyleSheet.create({
   },
   toast:{
     height:150,
-    width:150,
+    width:180,
     backgroundColor:"rgba(0,0,0,0.5)",
     justifyContent:"center",
     alignItems:"center",
@@ -164,6 +188,7 @@ const styles = StyleSheet.create({
     borderRadius:12
   },
   toastText:{
+    textAlign: 'center',
     fontSize:18,
     fontWeight:"800",
     color:"#fff",
