@@ -20,7 +20,8 @@ export default class App extends React.Component {
     this.state = {
         activePage : 0,
         nullPage : 0,
-        data : []
+        data : [],
+        val:0
      }
   }
 
@@ -46,7 +47,10 @@ export default class App extends React.Component {
       },styles.mainContent]}
     >
 
-      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start", }}>
+      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start",backgroundColor:"#fff" }}>
+        <View style={{height:80, justifyContent:"flex-end", paddingLeft:15, borderBottomColor:"#dcdcdc", borderBottomWidth:1.5}}>
+          <Text style={{fontSize:25, fontWeight:"bold"}}>Expo Evaluation</Text>
+        </View>
           <Text style={styles.title}>{item.get('question')}</Text>
         {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
@@ -71,8 +75,9 @@ export default class App extends React.Component {
 
   updateRecord = (value, id, q) =>{
     // console.log(value, id ,q)
-    answers[this.state.activePage] = value;
 
+    answers[this.state.activePage] = value;
+    this.setState({val:value})
     final_answer.push({
       id : id,
       question : q,
@@ -130,7 +135,7 @@ export default class App extends React.Component {
         slides={this.state.data}
         ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
-        onDone={() => this.addToDatabase()}
+        onDone={() =>this.addToDatabase()}
 
         renderDoneButton={this._renderDoneButton}
         onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}
@@ -164,11 +169,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   title: {
-    fontSize: 25,
-    color: 'white',
+    fontSize: 20,
+    color: '#000',
     backgroundColor: 'transparent',
     textAlign: 'center',
-    marginTop:100
+    marginTop:100,
+    textDecorationStyle:"solid"
   },
   buttonCircle: {
     width: 50,

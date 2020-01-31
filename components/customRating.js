@@ -45,7 +45,7 @@ class CustomRating extends Component {
                         onPress={()=>
                             {
                                 this.setState({
-                                    icon1:true,icon2:false, icon3:false, icon4:false, icon5:false,
+                                    icon1:true,icon2:false, icon3:false, icon4:false, icon5:false,value:1
                                 }),
                                 this.upDate(1)}
                         } 
@@ -64,7 +64,7 @@ class CustomRating extends Component {
                             onPress={()=>
                                 {
                                     this.setState({
-                                        icon1:false,icon2:true, icon3:false, icon4:false, icon5:false, 
+                                        icon1:false,icon2:true, icon3:false, icon4:false, icon5:false, value:2
                                     }),
                                     this.upDate(2)}
                             } 
@@ -83,7 +83,7 @@ class CustomRating extends Component {
                                onPress={()=>
                                 {
                                     this.setState({
-                                        icon1:false,icon2:false, icon3:true, icon4:false, icon5:false, 
+                                        icon1:false,icon2:false, icon3:true, icon4:false, icon5:false, value:3
                                     }),
                                     this.upDate(3)}
                             } 
@@ -102,7 +102,7 @@ class CustomRating extends Component {
                            onPress={()=>
                             {
                                 this.setState({
-                                    icon1:false,icon2:false, icon3:false, icon4:true, icon5:false, 
+                                    icon1:false,icon2:false, icon3:false, icon4:true, icon5:false, value:4
                                 }),
                                 this.upDate(4)}
                         } 
@@ -121,7 +121,7 @@ class CustomRating extends Component {
                            onPress={()=>
                             {
                                 this.setState({
-                                    icon1:false,icon2:false, icon3:false, icon4:false, icon5:true, 
+                                    icon1:false,icon2:false, icon3:false, icon4:false, icon5:true, value:5
                                 }),
                                 this.upDate(5)}
                         } 

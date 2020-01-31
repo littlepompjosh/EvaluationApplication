@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text, Button, Image,StyleSheet, TouchableOpacity ,TouchableHighlight} from 'react-native';
+import { Animated,
+  View, 
+  Text, 
+  Image,
+  StyleSheet, 
+  TouchableOpacity ,
+  Dimensions
+} from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import QuestionScreen from './components/slider'
 import ThanksScreen from './activity/thanks'
-import Logo from './assets/rating.png'
 
 // PARSE SERVER CONFIGURATION
 import { AsyncStorage } from "react-native";
@@ -33,9 +39,10 @@ class HomeScreen extends React.Component {
     this.setState({
       isLoading : true, visible: 'flex'
     })
+    
 
     getData().then(questions => {
-      console.log(questions)
+      // console.log(questions)
       if(questions !== undefined){
         questionnaires = questions
         
@@ -56,6 +63,8 @@ class HomeScreen extends React.Component {
 
 
   render() {
+
+var width = Dimensions.get('window').width; 
     const {navigate} = this.props.navigation;
 
     return (
@@ -79,7 +88,7 @@ class HomeScreen extends React.Component {
           onPress={()=> navigate('Question', {qData : questionnaires})}
           style={{
             height:50,
-            width:300,
+            width:width/1.2,
             borderRadius:50,
             backgroundColor:"#3498db",
             display:"flex",
