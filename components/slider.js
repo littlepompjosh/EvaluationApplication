@@ -21,7 +21,7 @@ export default class App extends React.Component {
         activePage : 0,
         nullPage : 0,
         data : [],
-        val:0
+        val:0,
      }
   }
 
@@ -136,7 +136,7 @@ export default class App extends React.Component {
         ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
         onDone={() =>this.addToDatabase()}
-
+        showDoneButton = {answers[this.state.activePage] === undefined ? false : true}
         renderDoneButton={this._renderDoneButton}
         onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}
         showNextButton = {false}
