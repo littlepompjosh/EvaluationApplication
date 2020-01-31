@@ -4,6 +4,8 @@ import { StyleSheet, View, Text, Image, I18nManager, Button } from 'react-native
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Rating, AirbnbRating } from 'react-native-ratings';
 import {addNewData} from '../function'
+import Check from '../assets/tick.png'
+import CustomRating from './customRating'
 
 I18nManager.forceRTL(false);
 
@@ -29,7 +31,7 @@ export default class App extends React.Component {
     })
 
     this.setState({data : this.props.navigation.state.params.qData})
-    console.log(this.props.navigation.state.params.qData)
+    // console.log(this.props.navigation.state.params.qData)
 
   }
 
@@ -44,43 +46,47 @@ export default class App extends React.Component {
       },styles.mainContent]}
     >
 
-      <View style={{width : dimensions.width,flex : 4,backgroundColor:"#dcdcdc",justifyContent:"flex-start", }}>
+      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start", }}>
           <Text style={styles.title}>{item.get('question')}</Text>
         {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
       {/* <Button title="TEST" onPress={() => console.log(item.id)} /> */}
-      <View style={{flex:1, backgroundColor:"#fff"}}>
-        <Rating
+      <View style={{flex:1,justifyContent:"flex-start",alignItems:"flex-start", backgroundColor:"#fff"}}>
+        {/* <Rating
             type='star'
             showRating
+            ratingTextColor= "#dcdcdc"
             style={{ paddingVertical: 10, backgroundColor: '#fff', width : dimensions.width}}
-            ratingBackgroundColor='#fafafa'
-            ratingColor = "orange"
+            ratingBackgroundColor='#dcdcdc'
+            ratingColor = "blue"
             ratingCount = {5}
             startingValue = {0}
-            //fractions = {1}
+            fractions = {1}
             onFinishRating = {(e) => this.updateRecord(e, item.id, item.get('question'))}
-          />
+          /> */}
+          <CustomRating id={item.id} question={item.get('question')} upDate={this.updateRecord}/>
         </View>
     </View>
   );
 
-  updateRecord = (e, id, q) =>{
-    answers[this.state.activePage] = e;
+  updateRecord = (value, id, q) =>{
+    // console.log(value, id ,q)
+    answers[this.state.activePage] = value;
+
     final_answer.push({
       id : id,
       question : q,
-      answer : e
+      answer : value
     })
   }
 
   checkAnswer = (page) => {
-
-    if(answers[this.state.activePage] === 0){
+    // console.log(answers)
+    if(answers[this.state.activePage] === 0 | answers[this.state.activePage] === undefined){
       this.refSlider.goToSlide(page - 1)
       this.setState({activePage : page - 1})
-        console.log(answers , '  -- ' + page);
-        console.log(this.state.activePage)
+        // console.log(answers , '  -- ' + page);
+        // console.log(this.state.activePage)
     }
   }
 
@@ -105,6 +111,17 @@ export default class App extends React.Component {
     })
   }
 
+  _renderDoneButton = () => {
+    return (
+      <View style={styles.buttonCircle}>
+       <Image 
+        style={{width:30, height:30,margin:20}} 
+         source={Check}
+       />
+      </View>
+    );
+  };
+
   render() {
     return (
       <>
@@ -114,6 +131,8 @@ export default class App extends React.Component {
         ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
         onDone={() => this.addToDatabase()}
+
+        renderDoneButton={this._renderDoneButton}
         onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}
         showNextButton = {false}
 
@@ -150,6 +169,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     textAlign: 'center',
     marginTop:100
+  },
+  buttonCircle: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'rgba(0, 0, 0, .1)',
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
