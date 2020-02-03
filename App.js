@@ -62,10 +62,10 @@ class HomeScreen extends React.Component {
         })
 
       } catch (error) {
-
+        
         this.setState({toast_label : "NO INTERNET CONNECTION"})
         ToastAndroid.showWithGravity(
-          'NO INTERNET CONNECTION PALOAD KA!!',
+          'NO INTERNET CONNECTION',
           ToastAndroid.SHORT,
           ToastAndroid.BOTTOM,
         )
@@ -100,7 +100,7 @@ var width = Dimensions.get('window').width;
             </Text> College Marikina  
           </Text>
           <Text style={styles.designs}> Exposition 2020 </Text> 
-        <Image source={require('./assets/rating.png')} style={{height : 150, width: 150, marginBottom: 100}}/>
+        <Image source={require('./assets/logo.png')} style={{height : 150, width: 150, marginBottom: 100}}/>
         {/* <View >
         <Button  title = 'Start Survey' style={styles.butones} onPress={() => navigate('Question')}/>
         </View> */}

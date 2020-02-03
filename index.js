@@ -2,7 +2,7 @@
  * @format
  */
 import React, { Component } from 'react';
-import {AppRegistry} from 'react-native';
+import {AppRegistry, PermissionsAndroid} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
 import Splash from './components/splashScreen'
@@ -18,6 +18,11 @@ class Main extends Component {
             this.setState({current:"Login"})
        },1800)
     }
+
+    componentDidMount = () => {
+        // this.requestInternetPermission();
+    }
+
     render() {
         let mainScreen =  this.state.current === 'Splash' ? <Splash/>:<App/>
         return mainScreen

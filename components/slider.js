@@ -47,10 +47,10 @@ export default class App extends React.Component {
       },styles.mainContent]}
     >
 
-      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start",backgroundColor:"#fff" }}>
-        <View style={{height:80, justifyContent:"flex-end", paddingLeft:15, borderBottomColor:"#dcdcdc", borderBottomWidth:1.5}}>
+      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start" }}>
+        {/* <View style={{height:80, justifyContent:"flex-end", paddingLeft:15, borderBottomColor:"#dcdcdc", borderBottomWidth:1.5}}>
           <Text style={{fontSize:25, fontWeight:"bold"}}>Expo Evaluation</Text>
-        </View>
+        </View> */}
           <Text style={styles.title}>{item.get('question')}</Text>
         {/* <Text style={styles.text}>{item.text}</Text> */}
       </View>
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: '#000',
+    color: '#fff',
     backgroundColor: 'transparent',
     textAlign: 'center',
     marginTop:100,
