@@ -47,7 +47,7 @@ export default class App extends React.Component {
       },styles.mainContent]}
     >
 
-      <View style={{width : dimensions.width,flex : 4,justifyContent:"flex-start" }}>
+      <View style={{width : dimensions.width,flex : 3,justifyContent:"flex-start" }}>
         {/* <View style={{height:80, justifyContent:"flex-end", paddingLeft:15, borderBottomColor:"#dcdcdc", borderBottomWidth:1.5}}>
           <Text style={{fontSize:25, fontWeight:"bold"}}>Expo Evaluation</Text>
         </View> */}
