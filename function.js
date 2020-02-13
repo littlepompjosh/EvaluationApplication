@@ -14,6 +14,7 @@ export async function getData(){
       return result
     }, (error) => {
       console.log(error)
+      return error
       // The object was not retrieved successfully.
       // error is a Parse.Error with an error code and message.
     });

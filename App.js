@@ -6,7 +6,8 @@ import { Animated,
   StyleSheet, 
   TouchableOpacity ,
   Dimensions,
-  ToastAndroid
+  ToastAndroid,
+  Alert
 } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -19,8 +20,11 @@ import Ping from 'react-native-ping';
 import { AsyncStorage } from "react-native";
 var Parse = require('parse/react-native');
 Parse.setAsyncStorage(AsyncStorage);
-Parse.initialize('evaluationAppId', '6fe6465f7f');
-Parse.serverURL = 'http://192.168.100.100:1337/parse';
+Parse.initialize('EvalAPP', 'EvalMasterKey');
+var server_url = 'https://jobstream-parse.ml/evaluation'
+Parse.serverURL = server_url;
+
+
 
 // Functions
 import {getData, addNewData} from './function'
@@ -39,7 +43,7 @@ class HomeScreen extends React.Component {
   }
 
   componentDidMount = async() =>{
-
+    
     this.setState({
       isLoading : true, visible: 'flex'
     })
@@ -51,6 +55,14 @@ class HomeScreen extends React.Component {
 
         getData().then(questions => {
           // console.log(questions)
+
+          
+          // ToastAndroid.showWithGravity(
+          //   JSON.stringify(questions),
+          //   ToastAndroid.LONG,
+          //   ToastAndroid.BOTTOM,
+          // );
+
           if(questions !== undefined){
             questionnaires = questions
             
@@ -99,7 +111,7 @@ var width = Dimensions.get('window').width;
               STI 
             </Text> College Marikina  
           </Text>
-          <Text style={styles.designs}> Exposition 2020 </Text> 
+          <Text style={styles.designs}> Exposition : 2020 </Text> 
         <Image source={require('./assets/logo.png')} style={{height : 150, width: 150, marginBottom: 100}}/>
         {/* <View >
         <Button  title = 'Start Survey' style={styles.butones} onPress={() => navigate('Question')}/>
