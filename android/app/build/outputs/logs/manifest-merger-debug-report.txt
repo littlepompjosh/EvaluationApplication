@@ -1,232 +1,232 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-ping] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-ping/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-ping] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-ping\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_masked-view] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\95eef5b316f4b3f853d23c1847aa96a0\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\026cb8462c4c01c4603994fc2129f07d\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2015a7030b70077830859934e74ce50b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\cb9ad1a9d445f8186a7099824f4ec99e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c995a22eebc38b641770a8a5fed09122\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\e63b2d0f0f9f4c07ec0dec1f00139db1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\1f89a37d65d56822321b511014a15d1d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3f045941110c5223a23d9ab44a92e88d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\4053d05d22421d254e5f28564e81e887\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\769ef68ff1463c94aa5ba456377bb5ca\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\25fcf9a62da360da506d9be64308eb3f\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c01fc938b1bfc23030d09b0a16e9a8df\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\71d20b170f8d12759c20d46092a42f4e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c37965f602dc18ae0243dd91c0e1c7e6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\57eca80fea234c32dc28eef3d74ca625\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc21a46b6b54ce9f2a17d4d937314e02\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0df888353591f350ca2e6383293a84c1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2a5c6be0b7bc807eca539997cdb7f6c5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\5bd875e96b9939124646b470c2ae3152\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\92efece4aa4b39855063d7442932c695\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\da61cedfaaa28aee698233d4733fc42c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\9e92ead94dd4fd0fe6be740c300f21d0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\220848f656b821b300255065e8fc4d2d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2f829fbe7b244f8bb1458fa06c010f5b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\6b1dee0cbd730c166f9960391f76d30f\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3065d961002d23faf7a655f607a55ec8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a2b24a095f2be2229e5bb7275f0d505a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\322fabaeded61e778cdd1d198ccc66c7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\049337d812b71c80c2b8e270825a80ea\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\45f553961f53c3e30cc22f908f50b9fe\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\099c6db3438281b8989b8f7f2edb308a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\14e99dfc87f35e0a681e61aa57200261\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a7b40e90f8fac721e00564e634791b96\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0c1cd5e9e689efc72293b0cd8b14482b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\64a5fe16cab9f59a7bf8c02b8e0ec592\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\68dd57ed34cb616c583001c0efd6f3c4\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:2:3-24
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:2:3-24
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:2:3-24
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:2:3-24
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:11:5-20
-MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:6:5-24:19
+MERGED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:6:5-24:19
+MERGED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\95eef5b316f4b3f853d23c1847aa96a0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\95eef5b316f4b3f853d23c1847aa96a0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\25fcf9a62da360da506d9be64308eb3f\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\25fcf9a62da360da506d9be64308eb3f\AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\6b1dee0cbd730c166f9960391f76d30f\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\6b1dee0cbd730c166f9960391f76d30f\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:8:7-39
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:8:7-39
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:8:7-39
 	tools:ignore
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:7:75-114
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:10:7-52
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:10:7-52
 	tools:targetApi
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:7:54-74
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:9:7-41
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:9:7-41
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:9:7-41
 	android:allowBackup
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:11:7-34
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:11:7-34
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:12:7-38
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:12:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:7:18-53
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:7:7-38
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:7:7-38
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:7:7-38
 activity#com.evalapp.MainActivity
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:13:7-22:18
 	android:label
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:17:9-51
 	android:configChanges
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:16:9-79
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:14:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:18:9-21:25
 action#android.intent.action.MAIN
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:20:13-73
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:23:7-84
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml:23:17-81
 uses-sdk
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-ping] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-ping/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-ping] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-ping/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_masked-view] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/mickey/Documents/GitHub/EvaluationApplication/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /Users/mickey/.gradle/caches/transforms-2/files-2.1/513a748fbb143ec2608f1d1ba7e64ceb/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/mickey/.gradle/caches/transforms-2/files-2.1/ff8ce6b1c08bccd03c12edc4722834ed/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7d291ef09397f94d413fd1d68e802dc4/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/905f112a6cb86dc3a26f4449a4ac7c57/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/fa3ff1792a5886bc579686288ec95cad/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/8fa600dd5260c7c88c7c8333d787dda5/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c34dd9f604154b9a0b3674ebd4d35b2e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/776406d763bdd674c89239caa6be6149/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/769e4a71f7dfcae50e9dd2a646fba558/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/81ea7cce5f8bac4b41c1d695a69d2948/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c933b29bdafed51f8ad37e83e3c068d2/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7edc27f0bed9ced935a0bda9e1d4bc68/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/1c22434a7bb765d53c857ee1b5bee5e0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c22aff4e29dc439173f03e4d907bcde4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/e8e84947eef33305fce572029b5c150e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/d904d06b46088cf9d5fcbaa1bc6c7472/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/76f817bda28839aedd9ccf5b2294cb42/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/f3e5d89fe79420862def8429d96df087/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/46ef4353aebd47d4e0d81695f5effba8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/a9e6f86ce8bcb3ac2f6b5548bb8a2159/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/7a43eb5fe7ebec5c6956aba9d372797a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c1e1c6a1a27db1c0fed10a3644862f80/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/b48aaf02233c4dc6ff6e81cd37b7de4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3e90c4ae45435012cea762e7b89151aa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /Users/mickey/.gradle/caches/transforms-2/files-2.1/6c1508147dafd64d8c47d205900287e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/2f5ddcd27fc03a9a24db84a30dee7f4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/15a4a4b04f9cc344e595a564e0397a94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/3f962f9e36f73b8a4fbac8ad02099763/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/347ce277688662dafc89145b74e63698/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/da55c93965ab1becf3dfc5e28ec2aed8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/77d8e93ef38894a7f0913d4bb066e89c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/271cff688f0e415683d07206074daef2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/04305049471693161e51036553cfd076/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/52c7f28e70fc10eb90bdaf4988544163/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/28789f336f0b7595e5ad3348a050db07/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c146196f6988d7d51caadf422af4b8cc/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/mickey/.gradle/caches/transforms-2/files-2.1/c9ec4d016788058b3d2b08e871fcf3db/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-ping] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-ping\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-ping] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-ping\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_masked-view] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_masked-view] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\95eef5b316f4b3f853d23c1847aa96a0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\95eef5b316f4b3f853d23c1847aa96a0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\026cb8462c4c01c4603994fc2129f07d\AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\026cb8462c4c01c4603994fc2129f07d\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2015a7030b70077830859934e74ce50b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2015a7030b70077830859934e74ce50b\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\cb9ad1a9d445f8186a7099824f4ec99e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\cb9ad1a9d445f8186a7099824f4ec99e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c995a22eebc38b641770a8a5fed09122\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c995a22eebc38b641770a8a5fed09122\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\e63b2d0f0f9f4c07ec0dec1f00139db1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\e63b2d0f0f9f4c07ec0dec1f00139db1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\1f89a37d65d56822321b511014a15d1d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\1f89a37d65d56822321b511014a15d1d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3f045941110c5223a23d9ab44a92e88d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3f045941110c5223a23d9ab44a92e88d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\4053d05d22421d254e5f28564e81e887\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\4053d05d22421d254e5f28564e81e887\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\769ef68ff1463c94aa5ba456377bb5ca\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\769ef68ff1463c94aa5ba456377bb5ca\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\25fcf9a62da360da506d9be64308eb3f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\25fcf9a62da360da506d9be64308eb3f\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c01fc938b1bfc23030d09b0a16e9a8df\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c01fc938b1bfc23030d09b0a16e9a8df\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\71d20b170f8d12759c20d46092a42f4e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\71d20b170f8d12759c20d46092a42f4e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c37965f602dc18ae0243dd91c0e1c7e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\c37965f602dc18ae0243dd91c0e1c7e6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\57eca80fea234c32dc28eef3d74ca625\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\57eca80fea234c32dc28eef3d74ca625\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc21a46b6b54ce9f2a17d4d937314e02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc21a46b6b54ce9f2a17d4d937314e02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0df888353591f350ca2e6383293a84c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0df888353591f350ca2e6383293a84c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2a5c6be0b7bc807eca539997cdb7f6c5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2a5c6be0b7bc807eca539997cdb7f6c5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\5bd875e96b9939124646b470c2ae3152\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\5bd875e96b9939124646b470c2ae3152\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\92efece4aa4b39855063d7442932c695\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\92efece4aa4b39855063d7442932c695\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\da61cedfaaa28aee698233d4733fc42c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\da61cedfaaa28aee698233d4733fc42c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\9e92ead94dd4fd0fe6be740c300f21d0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\9e92ead94dd4fd0fe6be740c300f21d0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\220848f656b821b300255065e8fc4d2d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\220848f656b821b300255065e8fc4d2d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2f829fbe7b244f8bb1458fa06c010f5b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\2f829fbe7b244f8bb1458fa06c010f5b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\bc698488aa6ff7785fed58ad306440aa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\6b1dee0cbd730c166f9960391f76d30f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\6b1dee0cbd730c166f9960391f76d30f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3065d961002d23faf7a655f607a55ec8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\3065d961002d23faf7a655f607a55ec8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a2b24a095f2be2229e5bb7275f0d505a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a2b24a095f2be2229e5bb7275f0d505a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\322fabaeded61e778cdd1d198ccc66c7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\322fabaeded61e778cdd1d198ccc66c7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\049337d812b71c80c2b8e270825a80ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\049337d812b71c80c2b8e270825a80ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\45f553961f53c3e30cc22f908f50b9fe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\45f553961f53c3e30cc22f908f50b9fe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\099c6db3438281b8989b8f7f2edb308a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\099c6db3438281b8989b8f7f2edb308a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\14e99dfc87f35e0a681e61aa57200261\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\14e99dfc87f35e0a681e61aa57200261\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a7b40e90f8fac721e00564e634791b96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\a7b40e90f8fac721e00564e634791b96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0c1cd5e9e689efc72293b0cd8b14482b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\0c1cd5e9e689efc72293b0cd8b14482b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\64a5fe16cab9f59a7bf8c02b8e0ec592\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\64a5fe16cab9f59a7bf8c02b8e0ec592\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\68dd57ed34cb616c583001c0efd6f3c4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\jobstreamapp.com\.gradle\caches\transforms-2\files-2.1\68dd57ed34cb616c583001c0efd6f3c4\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:5:5-77
+ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /Users/mickey/Documents/GitHub/EvaluationApplication/android/app/src/debug/AndroidManifest.xml:5:22-75
+		ADDED from C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\android\app\src\debug\AndroidManifest.xml:5:22-75
