@@ -17,6 +17,7 @@ import Start from './components/start'
 import Guest from './components/guest'
 import Ping from 'react-native-ping';
 import Instruct from './components/instructions';
+import Suggest from './components/comment';
 
 // PARSE SERVER CONFIGURATION
 import { AsyncStorage } from "react-native";
@@ -197,7 +198,13 @@ const AppNavigator = createStackNavigator({
     navigationOptions : {
       headerShown : false
     }
-  }
+  },
+  Suggest: {
+    screen: Instruct,
+    navigationOptions: {
+      headerShown : false
+    }
+  },
 
 });
 
