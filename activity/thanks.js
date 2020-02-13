@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, View, Text, Image, Dimensions, TouchableOpacity} from 'react-native';
 import ThanksImg from '../assets/thanks.png';
+import Instruct from '../components/instructions';
 
 class Thanks extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ var width = Dimensions.get('window').width;
                 {/* <Button color="#696464" title="Return" onPress={() => this.props.navigation.navigate('Home')}/> */}
                 <View style={{flex:1}}>
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('Home')}
+                        onPress={() => this.props.navigation.navigate('Start')}
                         style={{
                             height:50,
                             width:width/1.2,

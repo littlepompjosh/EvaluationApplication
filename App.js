@@ -13,8 +13,10 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import QuestionScreen from './components/slider'
 import ThanksScreen from './activity/thanks'
-
+import Start from './components/start'
+import Guest from './components/guest'
 import Ping from 'react-native-ping';
+import Instruct from './components/instructions';
 
 // PARSE SERVER CONFIGURATION
 import { AsyncStorage } from "react-native";
@@ -156,6 +158,26 @@ var width = Dimensions.get('window').width;
 }
 
 const AppNavigator = createStackNavigator({
+  
+  
+  Start: {
+    screen: Start,
+    navigationOptions: {
+      headerShown : false
+    }
+  },
+  Guest: {
+    screen: Guest,
+    navigationOptions: {
+      headerShown : false
+    }
+  },
+  Instruct: {
+    screen: Instruct,
+    navigationOptions: {
+      headerShown : false
+    }
+  },
   Home: {
     screen: HomeScreen,
     navigationOptions: {
