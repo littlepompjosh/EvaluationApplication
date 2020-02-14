@@ -1,30 +1,20 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add rn-emoji-feedback
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/mickey/Library/Android/sdk/emulator:/Users/mickey/Library/Android/sdk/tools:/Users/mickey/Library/Android/sdk/tools/bin:/Users/mickey/Library/Android/sdk/platform-tools:/Users/mickey/Library/Android/sdk/emulator:/Users/mickey/Library/Android/sdk/tools:/Users/mickey/Library/Android/sdk/tools/bin:/Users/mickey/Library/Android/sdk/platform-tools
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Users\jobstreamapp.com\scoop\shims;C:\Users\jobstreamapp.com\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs;C:\Users\jobstreamapp.com\AppData\Local\GitHubDesktop\bin;C:\Users\jobstreamapp.com\AppData\Roaming\npm;C:\Users\jobstreamapp.com\AppData\Local\Yarn\bin;C:\xampp\php;C:\flutter\bin;C:\Users\jobstreamapp.com\AppData\Local\Android\Sdk\platform-tools;
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  10.16.0
+  10.16.2
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/rn-emoji-feedback: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1129:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: EPERM: operation not permitted, unlink 'C:\Users\jobstreamapp.com\Documents\GitHub\EvaluationApplication\node_modules\@react-native-community\cli-tools\node_modules\mime\.github'
 
 npm manifest: 
   {
@@ -40,14 +30,18 @@ npm manifest:
     },
     "dependencies": {
       "@react-native-community/masked-view": "^0.1.6",
+      "axios": "^0.19.2",
+      "parse": "^2.11.0",
       "react": "16.9.0",
       "react-native": "0.61.5",
       "react-native-app-intro-slider": "^3.0.0",
       "react-native-gesture-handler": "^1.5.3",
       "react-native-ionicons": "^4.6.4",
+      "react-native-ping": "^1.2.2",
+      "react-native-ratings": "^6.5.0",
       "react-native-safe-area-context": "^0.6.2",
       "react-navigation": "^4.0.10",
-      "react-navigation-stack": "^2.0.15"
+      "react-navigation-stack": "^2.0.16"
     },
     "devDependencies": {
       "@babel/core": "^7.8.3",
@@ -691,6 +685,21 @@ Lockfile:
       make-dir "^2.1.0"
       pirates "^4.0.0"
       source-map-support "^0.5.16"
+  
+  "@babel/runtime-corejs3@7.7.7":
+    version "7.7.7"
+    resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.7.7.tgz#78fcbd472daec13abc42678bfc319e58a62235a3"
+    integrity sha512-kr3W3Fw8mB/CTru2M5zIRQZZgC/9zOxNSoJ/tVCzjPt3H1/p5uuGbz6WwmaQy/TLQcW31rUhUUWKY28sXFRelA==
+    dependencies:
+      core-js-pure "^3.0.0"
+      regenerator-runtime "^0.13.2"
+  
+  "@babel/runtime@7.7.7":
+    version "7.7.7"
+    resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
+    integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
+    dependencies:
+      regenerator-runtime "^0.13.2"
   
   "@babel/runtime@^7.0.0", "@babel/runtime@^7.8.3":
     version "7.8.3"
@@ -1570,6 +1579,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
     integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
   
+  axios@^0.19.2:
+    version "0.19.2"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+    integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+    dependencies:
+      follow-redirects "1.5.10"
+  
   babel-eslint@10.0.3:
     version "10.0.3"
     resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.3.tgz#81a2c669be0f205e19462fed2482d33e4687a88a"
@@ -2116,6 +2132,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
     integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
   
+  core-js-pure@^3.0.0:
+    version "3.6.4"
+    resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.6.4.tgz#4bf1ba866e25814f149d4e9aaa08c36173506e3a"
+    integrity sha512-epIhRLkXdgv32xIUFaaAry2wdxZYBi6bgM7cB136dzzXXa+dFyRLTZeLUJxnd8ShrmyVXBub63n2NHo2JAt8Cw==
+  
   core-js@^1.0.0:
     version "1.2.7"
     resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
@@ -2179,6 +2200,11 @@ Lockfile:
       shebang-command "^2.0.0"
       which "^2.0.1"
   
+  crypto-js@3.1.9-1:
+    version "3.1.9-1"
+    resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.1.9-1.tgz#fda19e761fc077e01ffbfdc6e9fdfc59e8806cd8"
+    integrity sha1-/aGedh/Ad+Af+/3G6f38WeiAbNg=
+  
   cssom@^0.4.1:
     version "0.4.4"
     resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.4.4.tgz#5a66cf93d2d0b661d80bf6a44fb65f5c2e4e0a10"
@@ -2226,6 +2252,13 @@ Lockfile:
     version "2.6.9"
     resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
     integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+    dependencies:
+      ms "2.0.0"
+  
+  debug@=3.1.0:
+    version "3.1.0"
+    resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+    integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
     dependencies:
       ms "2.0.0"
   
@@ -2975,6 +3008,13 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
     integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
+  
+  follow-redirects@1.5.10:
+    version "1.5.10"
+    resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+    integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+    dependencies:
+      debug "=3.1.0"
   
   for-in@^1.0.2:
     version "1.0.2"
@@ -4389,7 +4429,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
     integrity sha1-vyJJiGzlFM2hEvrpIYzcBlIR/Jw=
   
-  lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.5, lodash@^4.3.0:
+  lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
     version "4.17.15"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
     integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -5322,6 +5362,18 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
     integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
   
+  parse@^2.11.0:
+    version "2.11.0"
+    resolved "https://registry.yarnpkg.com/parse/-/parse-2.11.0.tgz#aebef56aa3ebe4636ffd05f8a5979c13b4fc5c5d"
+    integrity sha512-dbGdA5M1ylky4T/b5pOXeYhsHwzATz/JbweCiBtdJLsnb8SylSSgA7V0U96RtXBI1Hfzp5uFZpqmnUKr5t69NA==
+    dependencies:
+      "@babel/runtime" "7.7.7"
+      "@babel/runtime-corejs3" "7.7.7"
+      crypto-js "3.1.9-1"
+      uuid "3.3.3"
+      ws "7.2.1"
+      xmlhttprequest "1.8.0"
+  
   parseurl@~1.3.3:
     version "1.3.3"
     resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
@@ -5507,7 +5559,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.3"
   
-  prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5601,6 +5653,19 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
     integrity sha512-/VbpIEp8tSNNHIvstuA3Swx610whci1Zpc9mqNkqn14DkMbw+ORviln2u0XyHG1kPvvwTNGZY6QpeFwxYaSdbQ==
   
+  react-native-ping@^1.2.2:
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/react-native-ping/-/react-native-ping-1.2.2.tgz#36f150edb9fb622e84baa0c10cb29da1438c39f2"
+    integrity sha512-/6SvY6auKC4pa7QXaNGqZfNgIKi3Wxb2wE8ExICvUmM+wpiW+zXYSr14+HHVTged3lrVTrAQYB0C+aL4Uu0stQ==
+  
+  react-native-ratings@^6.5.0:
+    version "6.5.0"
+    resolved "https://registry.yarnpkg.com/react-native-ratings/-/react-native-ratings-6.5.0.tgz#a1606ccba3c5b54eec8e6cfa4765a45cf0e4ab8d"
+    integrity sha512-YMcfQ7UQCmXGEc/WPlukHSHs5yvckTwjq5fTRk1FG8gaO7fZCNygEUGPuw4Dbvvp3IlsCUn0bOQd63RYsb7NDQ==
+    dependencies:
+      lodash "^4.17.4"
+      prop-types "^15.5.10"
+  
   react-native-safe-area-context@^0.6.2:
     version "0.6.2"
     resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-0.6.2.tgz#d467ac8a953426bfbb6d8f417222b0dc3952be7a"
@@ -5655,10 +5720,10 @@ Lockfile:
       stacktrace-parser "^0.1.3"
       whatwg-fetch "^3.0.0"
   
-  react-navigation-stack@^2.0.15:
-    version "2.0.15"
-    resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-2.0.15.tgz#b14bd3483a2175956b5b1731f225bbff31b73c00"
-    integrity sha512-nHxM/mTSfjhjjd51JgAld7oORXPBbgB5q9cqWj8jmoacvAIwAxHX1fE+gfIjF5tazIV+CeANjmHa5RimXEbq/w==
+  react-navigation-stack@^2.0.16:
+    version "2.0.16"
+    resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-2.0.16.tgz#083ee644eeb600782222ff1d9ef6df939120ec8a"
+    integrity sha512-l6Fqvz0tvs7i9+KHZDW9hdQbzzgE78bq85pLALllyiHBfz/aFAaoNG4RUWNSen+54uU4xLC5uioowxTJPRLQWQ==
     dependencies:
       color "^3.1.2"
       react-native-iphone-x-helper "^1.2.1"
@@ -6872,6 +6937,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
     integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
   
+  uuid@3.3.3:
+    version "3.3.3"
+    resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
+    integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+  
   uuid@^3.3.2:
     version "3.4.0"
     resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
@@ -7056,6 +7126,11 @@ Lockfile:
     dependencies:
       mkdirp "^0.5.1"
   
+  ws@7.2.1, ws@^7.0.0:
+    version "7.2.1"
+    resolved "https://registry.yarnpkg.com/ws/-/ws-7.2.1.tgz#03ed52423cd744084b2cf42ed197c8b65a936b8e"
+    integrity sha512-sucePNSafamSKoOqoNfBd8V0StlkzJKL2ZAhGQinCfNQ+oacw+Pk7lcdAElecBF2VkLNZRiIb5Oi1Q5lVUVt2A==
+  
   ws@^1.1.0, ws@^1.1.5:
     version "1.1.5"
     resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.5.tgz#cbd9e6e75e09fc5d2c90015f21f0c40875e0dd51"
@@ -7072,11 +7147,6 @@ Lockfile:
       async-limiter "~1.0.0"
       safe-buffer "~5.1.0"
       ultron "~1.1.0"
-  
-  ws@^7.0.0:
-    version "7.2.1"
-    resolved "https://registry.yarnpkg.com/ws/-/ws-7.2.1.tgz#03ed52423cd744084b2cf42ed197c8b65a936b8e"
-    integrity sha512-sucePNSafamSKoOqoNfBd8V0StlkzJKL2ZAhGQinCfNQ+oacw+Pk7lcdAElecBF2VkLNZRiIb5Oi1Q5lVUVt2A==
   
   xcode@^2.0.0:
     version "2.1.0"
@@ -7112,6 +7182,11 @@ Lockfile:
     version "0.1.31"
     resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.31.tgz#b76c9a1bd9f0a9737e5a72dc37231cf38375e2ff"
     integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
+  
+  xmlhttprequest@1.8.0:
+    version "1.8.0"
+    resolved "https://registry.yarnpkg.com/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz#67fe075c5c24fef39f9d65f5f7b7fe75171968fc"
+    integrity sha1-Z/4HXFwk/vOfnWX197f+dRcZaPw=
   
   xpipe@^1.0.5:
     version "1.0.5"
