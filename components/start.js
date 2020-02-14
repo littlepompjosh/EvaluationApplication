@@ -6,7 +6,8 @@ import {
     Image,
     Modal,
     TextInput,
-    TouchableOpacity
+    TouchableOpacity,
+    AsyncStorage
 } from 'react-native'
 import St from '../assets/student.png'
 
@@ -77,7 +78,7 @@ class Start extends React.Component{
                         <Text style={{fontSize:20, fontWeight:"bold"}} >Student</Text>
                         </View>
                     </TouchableNativeFeedback>
-                    <Text style={{fontSize:18}}>or</Text>
+                    {/* <Text style={{fontSize:18, margin: 25}}>or</Text> */}
                     <TouchableNativeFeedback
                         onPress={()=>this.props.navigation.navigate('Guest')}
                     >
@@ -131,9 +132,10 @@ class Start extends React.Component{
                             <TextInput
                                 onChangeText={(text) => this.setState({input: text})}
                                 style={{borderColor:"#dcdcdc", borderWidth:1.5, marginTop:5, borderRadius:12, paddingLeft:10}}
+                                keyboardType= {'numeric'}
                             />
                             <TouchableOpacity 
-                                 onPress={()=>{this.setState({modalVisible:false}),this.props.navigation.navigate('Instruct')}}
+                                 onPress={()=>{AsyncStorage.setItem('STUDENT_ID', this.state.input),this.setState({modalVisible:false}),this.props.navigation.navigate('Instruct', {studendId : this.state.input})}}
                             >
                                 <View
                                     style={{

@@ -20,16 +20,41 @@ export async function getData(){
     });
 }
 
-export async function addNewData(arr) {
+export async function addNewData(arr, sid, phone) {
 
-  var Source = Parse.Object.extend("answers");
+    // console.log(arr.feedback)
+    var Source = Parse.Object.extend("Feedback");
     var query = new Source();
-    query.set("answer_data", arr);
-
+    query.set("comment", arr.feedback);
     return query.save().then(result => {
       // The object was retrieved successfully.
 
-      return ({status : true, result : result})
+        
+
+        var Sources = Parse.Object.extend("answers");
+        var query = new Sources();
+
+        var pointer = Source.createWithoutData(result.id);
+        query.set("answer_data", arr.answers);
+        query.set("feedback_pointer", pointer);
+        query.set("studentId", sid);
+        query.set("mobileNumber", phone);
+
+        return query.save().then(results => {
+          // The object was retrieved successfully.
+
+          return ({status : true, result : results})
+            
+        }, (error) => {
+          console.log(error)
+          return {status : false, error: error}
+          // The object was not retrieved successfully.
+          // error is a Parse.Error with an error code and message.
+        });
+
+
+
+      //return ({status : true, result : result})
         
     }, (error) => {
       console.log(error)
@@ -37,5 +62,22 @@ export async function addNewData(arr) {
       // The object was not retrieved successfully.
       // error is a Parse.Error with an error code and message.
     });
+
+
+  // var Source = Parse.Object.extend("answers");
+  //   var query = new Source();
+  //   query.set("answer_data", arr);
+
+  //   return query.save().then(result => {
+  //     // The object was retrieved successfully.
+
+  //     return ({status : true, result : result})
+        
+  //   }, (error) => {
+  //     console.log(error)
+  //     return {status : false, error: error}
+  //     // The object was not retrieved successfully.
+  //     // error is a Parse.Error with an error code and message.
+  //   });
 
 }

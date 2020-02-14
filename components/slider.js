@@ -95,25 +95,12 @@ export default class App extends React.Component {
     }
   }
 
-  addToDatabase = () => {
-    // console.log(final_answer)
-    addNewData(final_answer).then( res => {
+  proceedToFeedback = () => {
 
-      final_answer = [];
-      answers = [];
-      // console.log(res)
-      if(res.status === true){
-        
-        this.props.navigation.navigate('Thanks')
-      }else{
+    this.props.navigation.navigate('Suggest', {answers : final_answer});
+    final_answer = [];
+    answers = [];
 
-        ToastAndroid.showWithGravity(
-          res.error,
-          ToastAndroid.SHORT,
-          ToastAndroid.CENTER,
-        )
-      }
-    })
   }
 
   _renderDoneButton = () => {
@@ -135,7 +122,7 @@ export default class App extends React.Component {
         slides={this.state.data}
         ref={component => {this.refSlider = component}}
         renderItem={this._renderItem}
-        onDone={() =>this.addToDatabase()}
+        onDone={() =>this.proceedToFeedback()}
         showDoneButton = {answers[this.state.activePage] === undefined ? false : true}
         renderDoneButton={this._renderDoneButton}
         onSlideChange ={(e) => {this.setState({activePage : e}), this.checkAnswer(e)}}

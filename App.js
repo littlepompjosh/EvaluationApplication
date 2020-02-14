@@ -103,7 +103,7 @@ class HomeScreen extends React.Component {
 
   render() {
 
-var width = Dimensions.get('window').width; 
+    var width = Dimensions.get('window').width; 
     const {navigate} = this.props.navigation;
 
     return (
@@ -200,7 +200,7 @@ const AppNavigator = createStackNavigator({
     }
   },
   Suggest: {
-    screen: Instruct,
+    screen: Suggest,
     navigationOptions: {
       headerShown : false
     }

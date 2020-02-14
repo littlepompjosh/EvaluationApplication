@@ -7,8 +7,14 @@ import {
     TouchableOpacity,
     ScrollView,
     Modal,
-    CheckBox
+    CheckBox,
+    ToastAndroid,
+    AsyncStorage
 } from 'react-native'
+
+// import SendSMS from 'react-native-sms'
+
+import {sendSMS} from './smsSender'
 
 
 class Guest extends React.Component{
@@ -17,8 +23,8 @@ class Guest extends React.Component{
        super(props);
        this.state={
            disable:true,
-           input:"",
-           email:"",
+           verification_code:"",
+           mobile:"",
            color:"#888",
            test:false,
            modalVisible:false
@@ -28,18 +34,92 @@ class Guest extends React.Component{
 
    chech=()=>{
        if(this.state.test === false){
-        this.setState({color:"#3498db", disable:false, test:true})
+           if(this.state.mobile.length === 11){
+             this.setState({color:"#3498db", disable:false, test:true})
+           }else{
+                this.setState({color:"#888", disable:true, test:false})
+               ToastAndroid.showWithGravity(
+                   'PLEASE INPUT YOUR MOBILE NUMBER TO PROCEED',
+                    ToastAndroid.LONG,
+                    ToastAndroid.BOTTOM,
+                );
+           }
+            
        }else{
         this.setState({color:"#888", disable:true, test:false})
        }
    }
+
+   detectMobile =(number)=> {
+        if(number.length === 11){
+            this.setState({color:"#3498db", disable:false, test:true})
+
+            // check mobile if exist /////////////////
+        }else{
+            this.setState({color:"#888", disable:true, test:false})
+        }
+   }
+
+   verifyNumber = () => {
+        
+
+        AsyncStorage.getItem('VERIFICATION_CODE', (err, result) => {
+
+
+            console.log(result)
+
+            if(this.state.verification_code === result){
+                AsyncStorage.setItem('VERIFICATION_CODE', null)
+                AsyncStorage.setItem('MOBILE_NUMBER', this.state.mobile)
+                this.setState({modalVisible:false})
+                this.props.navigation.navigate('Instruct')
+            }else{
+
+                ToastAndroid.showWithGravity(
+                    'INVALID VERIFICATION CODE',
+                     ToastAndroid.LONG,
+                     ToastAndroid.BOTTOM,
+                );
+
+            }
+        });
+        
+        
+   }
+
+   generateCode = () => {
+        
+        const min = 1000;
+        const max = 9999;
+        const rand = min + Math.random() * (max - min);
+        
+        AsyncStorage.setItem('VERIFICATION_CODE', parseInt(rand).toString())
+        // console.log('GENERATE CODE :', parseInt(rand).toString())
+
+        sendSMS(this.state.mobile, parseInt(rand).toString())
+        // SendSMS.send({
+        //     body: 'STI Evaluation Verification Code : ' + parseInt(rand).toString(),
+        //     recipients: [this.state.mobile],
+        //     successTypes: ['sent', 'queued'],
+        //     allowAndroidSendWithoutReadPermission: true
+        // }, (completed, cancelled, error) => {
+     
+        // console.log('SMS Callback: completed: ' + completed + ' cancelled: ' + cancelled + 'error: ' + error);
+     
+        // });
+
+        
+
+   }
+
     render(){
         return(
             <View style={{flex:1, paddingTop:50, padding:20 }}>
-                <Text>Enter Email Address:</Text>
+                <Text> Please Enter your Mobile Number:</Text>
                 <TextInput
-                    onChangeText={(text) => this.setState({email: text})}
+                    onChangeText={(text) => {this.setState({mobile: text}), this.detectMobile(text)}}
                     style={{borderColor:"#dcdcdc", borderWidth:1.5, marginTop:5, borderRadius:12, paddingLeft:10}}
+                    keyboardType = {'numeric'}
                 />
                 <View 
                     style={{
@@ -131,7 +211,7 @@ class Guest extends React.Component{
                     </View>
                
 
-                <TouchableOpacity disabled={this.state.disable}  onPress={()=>this.setState({modalVisible:true})} >
+                <TouchableOpacity disabled={this.state.disable}  onPress={()=>{this.setState({modalVisible:true}), this.generateCode()}} >
                     <View
                          style={{
                              marginTop:30,
@@ -160,10 +240,11 @@ class Guest extends React.Component{
                       <View style={{flex:1, paddingTop:150, padding:50 }}>
                             <Text>Enter Verification Code:</Text>
                             <TextInput
-                                onChangeText={(text) => this.setState({input: text})}
+                                onChangeText={(text) => this.setState({verification_code: text})}
                                 style={{borderColor:"#dcdcdc", borderWidth:1.5, marginTop:5, borderRadius:12, paddingLeft:10}}
+                                keyboardType={'numeric'}
                             />
-                            <TouchableOpacity onPress={()=>{this.setState({modalVisible:false}),this.props.navigation.navigate('Instruct')}}
+                            <TouchableOpacity onPress={()=> this.verifyNumber()}
                             >
                                 <View
                                     style={{
@@ -176,7 +257,7 @@ class Guest extends React.Component{
                                         alignItems:"center"
                                     }}
                                 >
-                                    <Text style={{color:"#fff"}}>Proceed</Text>
+                                    <Text style={{color:"#fff"}}>Verify</Text>
                                 </View>
                             </TouchableOpacity>
                             
