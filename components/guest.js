@@ -176,6 +176,7 @@ class Guest extends React.Component{
                     onChangeText={(text) => {this.setState({mobile: text}), this.detectMobile(text)}}
                     style={{borderColor:"#dcdcdc", borderWidth:1.5, marginTop:5, borderRadius:12, paddingLeft:10}}
                     keyboardType = {'numeric'}
+                    maxLength={11}
                 />
                 <View 
                     style={{
