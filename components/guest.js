@@ -9,12 +9,17 @@ import {
     Modal,
     CheckBox,
     ToastAndroid,
-    AsyncStorage
+    AsyncStorage,
+    Button,
+    ActivityIndicator
 } from 'react-native'
 
 // import SendSMS from 'react-native-sms'
 
-import {sendSMS} from './smsSender'
+import {sendSMS, getSMS_Status} from './smsSender'
+
+
+const HOST_DEVICE_ID = 115526
 
 
 class Guest extends React.Component{
@@ -27,7 +32,8 @@ class Guest extends React.Component{
            mobile:"",
            color:"#888",
            test:false,
-           modalVisible:false
+           modalVisible:false,
+           loader : false
        }
    }
 
@@ -52,8 +58,12 @@ class Guest extends React.Component{
 
    detectMobile =(number)=> {
         if(number.length === 11){
-            this.setState({color:"#3498db", disable:false, test:true})
-
+            if(this.state.test === true){
+                this.setState({color:"#3498db", disable:false})
+            }else{
+                this.setState({color:"#888", disable:true})
+            }
+            
             // check mobile if exist /////////////////
         }else{
             this.setState({color:"#888", disable:true, test:false})
@@ -64,9 +74,6 @@ class Guest extends React.Component{
         
 
         AsyncStorage.getItem('VERIFICATION_CODE', (err, result) => {
-
-
-            console.log(result)
 
             if(this.state.verification_code === result){
                 AsyncStorage.setItem('VERIFICATION_CODE', null)
@@ -96,21 +103,70 @@ class Guest extends React.Component{
         AsyncStorage.setItem('VERIFICATION_CODE', parseInt(rand).toString())
         // console.log('GENERATE CODE :', parseInt(rand).toString())
 
-        sendSMS(this.state.mobile, parseInt(rand).toString())
-        // SendSMS.send({
-        //     body: 'STI Evaluation Verification Code : ' + parseInt(rand).toString(),
-        //     recipients: [this.state.mobile],
-        //     successTypes: ['sent', 'queued'],
-        //     allowAndroidSendWithoutReadPermission: true
-        // }, (completed, cancelled, error) => {
-     
-        // console.log('SMS Callback: completed: ' + completed + ' cancelled: ' + cancelled + 'error: ' + error);
-     
-        // });
-
+        this.setState({loader : true, disable: true});
+        ToastAndroid.showWithGravity(
+            'SENDING VERIFICATION CODE, PLEASE WAIT!',
+             ToastAndroid.LONG,
+             ToastAndroid.BOTTOM,
+        );
         
 
+        sendSMS(this.state.mobile, parseInt(rand).toString(), HOST_DEVICE_ID).then(res => {
+
+            
+
+            getSMS_Status(res[0].id).then( async result => {
+  
+                function sleep(ms) {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                }
+
+                try{
+                    var status = result
+                    do {
+                        console.log('GETTING STATUS');
+                        getSMS_Status(res[0].id).then(loop_res => {     
+                            console.log('DO WHILE RESULT :', loop_res)
+                            status = loop_res
+                        })
+
+                        if(status === 'failed'){
+                            break;
+                        }
+                        await sleep(5000);
+
+                    }while((status !== 'sent'))
+
+                    console.log('FINAL STATUS : ' + status)
+
+                    if(status === 'sent'){
+
+                        this.setState({modalVisible:true, loader : false, disable: false});
+                        
+                    }else{
+
+                        ToastAndroid.showWithGravity(
+                            'FAILED TO SEND VERIFICATION CODE PLEASE CHECK HOST DEVICE ID : ' + HOST_DEVICE_ID,
+                             ToastAndroid.LONG,
+                             ToastAndroid.BOTTOM,
+                        );
+
+                        this.setState({loader : false, disable: false});
+
+                    }
+
+                }catch (e){
+                    console.log(e)
+                }
+
+            })
+
+            
+            
+        })
    }
+
+
 
     render(){
         return(
@@ -211,7 +267,7 @@ class Guest extends React.Component{
                     </View>
                
 
-                <TouchableOpacity disabled={this.state.disable}  onPress={()=>{this.setState({modalVisible:true}), this.generateCode()}} >
+                <TouchableOpacity disabled={this.state.disable}  onPress={()=>{this.generateCode()}} >
                     <View
                          style={{
                              marginTop:30,
@@ -223,7 +279,8 @@ class Guest extends React.Component{
                              alignItems:"center"
                          }}
                     >
-                        <Text style={{color:"#fff", fontWeight:"bold"}}>Proceed</Text>
+                        {this.state.loader === false ? <Text style={{color:"#fff", fontWeight:"bold"}}>Proceed</Text> : <ActivityIndicator size="large" color="#fff" />}
+                        
                     </View>
                 </TouchableOpacity>
                 <Modal
