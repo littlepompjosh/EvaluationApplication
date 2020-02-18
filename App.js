@@ -24,7 +24,7 @@ import { AsyncStorage } from "react-native";
 var Parse = require('parse/react-native');
 Parse.setAsyncStorage(AsyncStorage);
 Parse.initialize('EvalAPP', 'EvalMasterKey');
-var server_url = 'https://jobstream-parse.ml/evaluation'
+var server_url = 'https://jobstreamapp.ca/evaluation'
 Parse.serverURL = server_url;
 
 

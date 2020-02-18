@@ -19,7 +19,7 @@ import {
 import {sendSMS, getSMS_Status} from './smsSender'
 
 
-const HOST_DEVICE_ID = 115526
+const HOST_DEVICE_ID = 115490
 
 
 class Guest extends React.Component{

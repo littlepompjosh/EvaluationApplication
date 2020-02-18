@@ -15,7 +15,7 @@ export async function sendSMS (mobile, code, host_id) {
     {
         method: 'POST', 
         headers:{
-            'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTU4MTc5MTMwNywiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjc3NTgzLCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.z2dLQKLCzOb6aZaQ2vpR34v7k7iRwsmvlkY28rjHdN8'
+            'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTU4MjAwNjI0NCwiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjc3NTQ4LCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.xw6fz82UKq9xUIgxht4691b8qIsE6JT9pklGNhW5GTQ'
         },
         body: JSON.stringify(data)
     })
@@ -35,7 +35,7 @@ export function getSMS_Status (message_id) {
     console.log('GETTING SMS STATUS : ' + message_id);
 
     var URL = 'https://smsgateway.me/api/v4/message/' + message_id;
-    var APIKEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTU4MTc5MTMwNywiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjc3NTgzLCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.z2dLQKLCzOb6aZaQ2vpR34v7k7iRwsmvlkY28rjHdN8'
+    var APIKEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbiIsImlhdCI6MTU4MjAwNjI0NCwiZXhwIjo0MTAyNDQ0ODAwLCJ1aWQiOjc3NTQ4LCJyb2xlcyI6WyJST0xFX1VTRVIiXX0.xw6fz82UKq9xUIgxht4691b8qIsE6JT9pklGNhW5GTQ'
     return axios.get(URL, { headers: { Authorization: APIKEY } }).then(response => {
       // If request is good...
       console.log(response.data.status)
